@@ -3,11 +3,76 @@
 IP addresses similar to post code, way to identify a specific node
 Each IP address can be assigned to one device at a time 
 
+## Base Numbers
+
+Base numbers are the fundamentals of how number sizes increase
+Standard number formats use base 10, meaning after 10 units the size increases
+
+62
+
+2  = 2 * (10 / 10)
+60 = 6 * 10 
+
+123
+
+3   = 3 * (10 (power of 0)
+20  = 2 * (10 * 1)
+100 = 1 * (10 * 10 * 10)
+
+25741
+
+1     = 1 * 10(power of 0) 
+40    = 4 * 10
+700   = 7 * 10 * 10
+5000  = 5 * 10 * 10 * 10
+20000 = 2 * 10 * 10 * 10 * 10 
+
+Binary - Base number 2 
+
+1  = 1
+2  = 10
+3  = 11
+10 = 1010
+
+Take value and divide by 2, keep the remainder
+
+2 / 2 = 1 r0
+1 / 2 = 0 r1
+
+read r from bottom to top = 10
+
+10 / 2  = 5 r0
+5  / 2  = 2 r1
+2  / 2  = 1 r0
+1  / 2  = 0 r1
+
+read remainders from bottom up 1010
+
+62 
+
+62 / 2 = 31 r0
+31 / 2 = 15 r1
+15 / 2 = 7  r1
+7  / 2 = 3  r1
+3  / 2 = 1  r1
+1  / 2 = 0  r1
+
+62 = 111110
+
+exponential increase in size, 25741 in binary = 110010010001101
+
+other formats: 
+octal       base 8 
+hexadecimal base 16
+
+
 ## IPv4
 IPv4 are 32-bit binary addresses
 4 octets each containing 8 bits
 
 127.0.0.1 = 01111111.00000000.00000000.00000001
+
+
 
 Each 1 from right to left adds base 2 (same as multiplying by 10, but multiplying by 2)
 
@@ -140,7 +205,7 @@ Denary base 10
 Any 0's that are at the beginning or end of a group can be removed
 0000 - whole group removed
 0120 - 12
-0101 - 101
+0101 -
 
 
 

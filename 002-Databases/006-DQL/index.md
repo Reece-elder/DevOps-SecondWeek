@@ -67,6 +67,10 @@ SELECT * FROM city WHERE CountryCode IN ('TUR', 'UKR', 'DEU');
 
 ### Aliasing
 
+Allows you to combine values
+
+SELECT title, rental_rate * rental_duration AS rental_price FROM film;
+
 Aliasing allows us to rename 
 
 SELECT CONCAT(Name, ', ', CountryCode, ', ', District) AS string FROM city LIMIT 10;
